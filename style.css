@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: #1d3557;
+    color: #a8dadc;
+    font-family: corbel;
+}
+
+#intro1 {
+    margin-top: 270px;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+#intro2 {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 500px;
+}
+
+#abt {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+#ab-head {
+    width: 400px;
+    height: 100px;
+    flex-basis: 30%;
+    font-size: 50px;
+    text-align: center;
+}
+
+#ab-txt {
+    font-size: 25px;
+    flex-basis: 65%;
+    color: #f1faee;
+}
+
+b {
+    color: #fca311;
+}
+
