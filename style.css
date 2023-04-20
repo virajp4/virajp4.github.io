@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-color: #000000;
-    color: #a8dadc;
+    color: #fca311;
     font-family: corbel;
 }
 
@@ -20,8 +20,7 @@ body {
 #abt {
     display: flex;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 250px;
+    margin-bottom: 500px;
 }
 
 #ab-head {
@@ -30,6 +29,7 @@ body {
     flex-basis: 30%;
     font-size: 50px;
     text-align: center;
+    color: #fca311;
 }
 
 #ab-txt {
@@ -38,7 +38,15 @@ body {
     color: #f1faee;
 }
 
-b {
+#ab-txt:hover b {
     color: #fca311;
+}
+
+#skills {
+    margin-bottom: 500px;
+}
+
+#sk-head {
+    font-size: 50px;
 }
 
