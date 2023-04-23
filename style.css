@@ -1,52 +1,95 @@
-body {
+body,html {
     text-align: center;
     background-color: #000000;
-    color: #fca311;
     font-family: corbel;
+    color: #fca311;
+    height: 100%;
+    width: 99%;
+    scroll-behavior: smooth;
+}
+
+#intro {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner_intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
 }
 
 #intro1 {
-    margin-top: 270px;
-    margin-bottom: 0px;
     font-size: 50px;
+    margin-bottom: 0;
 }
 
 #intro2 {
+    margin-top: 0;
     font-size: 80px;
-    margin-top: 0px;
-    margin-bottom: 500px;
+}
+
+#photo1 {
+    width: 300px;
+    height: 300px;
+    border: dashed #fca311;
+    border-radius: 50%;
+    margin-left: 0px;
 }
 
 #abt {
     display: flex;
     align-items: center;
-    margin-bottom: 500px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 #ab-head {
     width: 400px;
-    height: 100px;
     flex-basis: 30%;
     font-size: 50px;
     text-align: center;
     color: #fca311;
+    flex-grow: 1;
 }
 
 #ab-txt {
     font-size: 25px;
     flex-basis: 65%;
     color: #f1faee;
+    flex-grow: 2;
 }
 
-#ab-txt:hover b {
+#ab-head:hover #ab-txt b, #ab-txt:hover b {
     color: #fca311;
+    transition: 0.3s;
 }
 
 #skills {
-    margin-bottom: 500px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #sk-head {
     font-size: 50px;
+}
+
+#prog {
+    display: flex;
+    align-items: center;
+
+}
+
+#prog h3 {
+    width: 100px;
 }
 
