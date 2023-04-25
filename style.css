@@ -1,76 +1,98 @@
-body,html {
+body,
+html {
     text-align: center;
-    background-color: #000000;
+    height: 100vh;;
+    background-color: #131212;
     font-family: corbel;
-    color: #fca311;
-    height: 100%;
-    width: 99%;
+    color: #ec8602;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
-#intro {
+nav {
+    background-color: #2b2a2a;
+    position: fixed;
     display: flex;
-    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar button {
+    background-color: #ffa559;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 8rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar button:hover {
+    background-color: #481d03;
+    color: #ffa559;
+}
+
+.intro {
+    display: flex;
+    height: 45rem;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-#inner_intro {
+.inner_intro {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-basis: 40%;
 }
 
-#intro1 {
+.intro1 {
+    margin: 0;
     font-size: 50px;
-    margin-bottom: 0;
 }
 
-#intro2 {
-    margin-top: 0;
+.intro2 {
+    margin: 0;
     font-size: 80px;
 }
 
-#photo1 {
+.photo1 {
     width: 300px;
     height: 300px;
-    border: dashed #fca311;
+    border: solid #ec8602;
     border-radius: 50%;
-    margin-left: 0px;
+    margin-left: 100px;
 }
 
-#abt {
-    display: flex;
-    align-items: center;
+.abt {
     height: 100%;
     width: 100%;
-    justify-content: center;
 }
 
-#ab-head {
-    width: 400px;
-    flex-basis: 30%;
+.abt-head {
+    width: 100%;
     font-size: 50px;
     text-align: center;
-    color: #fca311;
-    flex-grow: 1;
+    color: #ec8602;
 }
 
-#ab-txt {
+.abt-txt {
+    width: 100%;
     font-size: 25px;
-    flex-basis: 65%;
     color: #f1faee;
-    flex-grow: 2;
+    
 }
 
-#ab-head:hover #ab-txt b, #ab-txt:hover b {
-    color: #fca311;
+.abt-txt:hover b {
+    color: #ec8602;
     transition: 0.3s;
 }
 
-#skills {
+.skills {
     display: flex;
     height: 100%;
     width: 100%;
@@ -79,17 +101,16 @@ body,html {
     justify-content: center;
 }
 
-#sk-head {
+.skills-head {
     font-size: 50px;
 }
 
-#prog {
+.prog {
     display: flex;
     align-items: center;
 
 }
 
-#prog h3 {
+.prog h3 {
     width: 100px;
 }
-
