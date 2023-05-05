@@ -1,7 +1,7 @@
 body,
 html {
     text-align: center;
-    height: 100vh;;
+    height: 100vh;
     background-color: #131212;
     font-family: corbel;
     color: #ec8602;
@@ -9,7 +9,7 @@ html {
     margin: 0;
 }
 
-nav {
+.navbar {
     background-color: #2b2a2a;
     position: fixed;
     display: flex;
@@ -18,17 +18,21 @@ nav {
     padding: 1.2rem 0;
     width: 100%;
     border-radius: 0 0 20px 20px;
+    box-shadow: 0.3rem 0.3rem 0.3rem #22211f;
 }
 
 .navbar button {
     background-color: #ffa559;
+    color: #481d03;
     border: 2px solid black;
     border-radius: 10px;
     width: 8rem;
-    padding: 0.5rem 0.5rem;
+    height: 3rem;
+    padding: 0.25rem 0.25rem;
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
+    box-shadow: 0.313rem 0.313rem 0.313rem #22211f;
 }
 
 .navbar button:hover {
@@ -48,15 +52,14 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .intro1 {
-    margin: 0;
     font-size: 50px;
 }
 
 .intro2 {
-    margin: 0;
     font-size: 80px;
 }
 
@@ -69,7 +72,6 @@ nav {
 }
 
 .abt {
-    height: 100%;
     width: 100%;
 }
 
@@ -78,6 +80,7 @@ nav {
     font-size: 50px;
     text-align: center;
     color: #ec8602;
+    font-weight: bold;
 }
 
 .abt-txt {
@@ -93,7 +96,7 @@ nav {
 
 .skills {
     display: flex;
-    height: 100%;
+    height: 45rem;
     width: 100%;
     flex-direction: column;
     align-items: center;
