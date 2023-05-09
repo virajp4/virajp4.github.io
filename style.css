@@ -38,6 +38,7 @@ html {
 .navbar button:hover {
     background-color: #481d03;
     color: #ffa559;
+    transition: all ease-in-out 0.18s;
 }
 
 .intro {
@@ -84,6 +85,7 @@ html {
     text-align: center;
     color: #ec8602;
     font-weight: bold;
+    text-decoration: underline 3px;
 }
 
 .abt-txt {
@@ -105,13 +107,24 @@ html {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 1.6rem;
+    text-decoration: underline 3px;
 }
 
 .skills-body {
     display: flex;
     justify-content: space-evenly;
+    font-size: 2.1rem;
 }
 
+.prog .fa-star {
+    visibility: hidden;
+    transition: all ease-in-out 0.19s;
+}
+
+.prog:hover .fa-star {
+    visibility: visible;
+    transition: all 0.2s ease-in 0s;
+}
 
 .prog h3 {
     width: 100px;
