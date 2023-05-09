@@ -9,6 +9,10 @@ html {
     margin: 0;
 }
 
+i {
+    color: #FFA559;
+}
+
 .navbar {
     background-color: #2b2a2a;
     position: fixed;
@@ -118,14 +122,17 @@ html {
 
 .prog .fa-star {
     visibility: hidden;
-    transition: all ease-in-out 0.19s;
 }
 
 .prog:hover .fa-star {
     visibility: visible;
-    transition: all 0.2s ease-in 0s;
+}
+
+.prog:hover i {
+    color: #EC8602;
 }
 
 .prog h3 {
     width: 100px;
 }
+
