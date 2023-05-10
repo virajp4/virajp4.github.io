@@ -1,9 +1,8 @@
 body,
 html {
-    text-align: center;
     height: 100vh;
     background-color: #131212;
-    font-family: corbel;
+    font-family: 'Nunito', sans-serif;
     color: #ec8602;
     scroll-behavior: smooth;
     margin: 0;
@@ -14,77 +13,43 @@ i {
 }
 
 .navbar {
-    background-color: #2b2a2a;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1.2rem 0;
-    width: 100%;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0.3rem 0.3rem 0.3rem #22211f;
+    background-color: #242323;
 }
 
-.navbar button {
-    background-color: #ffa559;
-    color: #481d03;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 8rem;
-    height: 3rem;
-    padding: 0.25rem 0.25rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    box-shadow: 0.313rem 0.313rem 0.313rem #22211f;
+.navbar-brand {
+    color: #EC8602;
+    font-size: 1.6rem;
 }
 
-.navbar button:hover {
-    background-color: #481d03;
-    color: #ffa559;
-    transition: all ease-in-out 0.18s;
+.navbar-brand:hover {
+    color: #EC8602;
 }
 
-.intro {
-    display: flex;
-    height: 45rem;
-    justify-content: center;
-    align-items: center;
+.nav-link {
+    color: #ffe6c7;
+    font-size: 1.3rem;
 }
 
-.inner_intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nav-link:hover {
+    color: #EC8602;
+}
+
+.intro .row {
     margin: 0;
+    padding: 0;
 }
 
 .intro1 {
-    font-size: 50px;
+    font-size: 2.8rem;
 }
 
-.intro2 {
-    font-size: 80px;
+@media (max-width: 1200px) {
+    .intro1 {
+        font-size: 2.5rem;
+    }
 }
 
-.intro2 b {
-    color: #ffe6c7;
-    font-weight: 530;
-}
-
-.photo1 {
-    width: 300px;
-    height: 300px;
-    border: solid #ec8602;
-    border-radius: 50%;
-    margin-left: 100px;
-}
-
-.abt {
-    width: 100%;
-}
-
-.abt-head {
+.about-head {
     font-size: 50px;
     text-align: center;
     color: #ec8602;
@@ -92,32 +57,26 @@ i {
     text-decoration: underline 3px;
 }
 
-.abt-txt {
-    width: 100%;
-    font-size: 25px;
+.about-text {
+    font-size: 1.5rem;
     color: #f1faee;
 }
 
-.abt-txt:hover b {
+.about-text:hover b {
     color: #ec8602;
     transition: 0.3s;
-}
-
-.skills {
-    margin-top: 3rem;
 }
 
 .skills-head {
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 1.6rem;
     text-decoration: underline 3px;
 }
 
 .skills-body {
     display: flex;
     justify-content: space-evenly;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 .prog .fa-star {
@@ -135,4 +94,3 @@ i {
 .prog h3 {
     width: 100px;
 }
-

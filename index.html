@@ -6,30 +6,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viraj Patel</title>
+    <title>Viraj Patel | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f31009ec0d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="nav1">About</button>
-        <button class="nav2">Skills</button>
-        <button class="nav3">Projects</button>
-        <button class="nav4">Résumé</button>
-        <button class="nav5">Socials</button>
-    </nav>
-    <div class="intro">
-        <div class="inner_intro">
-            <h2 class="intro1"> Hello there, </h2>
-            <h1 class="intro2"> I am <b>Viraj.</b></h1>
+
+    <nav class="navbar navbar-expand-md fixed-top container-fluid w-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand px-2">Viraj Patel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlink"
+                aria-controls="navlink" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navlink">
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Résumé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Socials</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img class="photo1" src="photo.JPG">
+    </nav>
+
+    <div class="intro container-fluid px-0 py-3 m-0">
+        <div class="row align-items-center p-0">
+            <div class="text-center mt-2 col-lg-6 d-none d-lg-block p-0">
+                <h2 class="intro1"> Hello there, <br> Welcome to my portfolio!</h2>
+            </div>
+            <div class="photodiv col-lg-6 p-0 m-0">
+                <img class="photo1 img-fluid w-100 h-75" src="icon.png">
+            </div>
+        </div>
     </div>
-    <div class="abt container">
-        <h2 class="abt-head">About Me</h2>
-        <p class="abt-txt">
+
+    <div class="about container-fluid px-0">
+        <h2 class="about-head">About Me</h2>
+        <p class="about-text text-center mt-3 mx-5">
             I am an undergraduate <b>Computer Science</b> student who is intrigued about the recent advancements
             <b>Artificial Intelligence.</b> <br>
             I am passionate about <b>Open Source development,</b> while I enjoy <b>problem-solving</b> via
@@ -39,10 +70,11 @@
             Currently I'm seeking to attain an <b>internship</b> role in <b>Software Engineering.</b>
         </p>
     </div>
-    <div class="skills">
 
-        <h2 class="skills-head">Skills</h2>
-        <div class="skills-body">
+    <div class="skills container-fluid px-0 mt-5">
+
+        <h2 class="skills-head text-center">Skills</h2>
+        <div class="skills-body mt-4 text-center">
             <div class="prog py">
                 <i class="fa-brands fa-python fa-2xl"></i><br>
                 <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
@@ -76,9 +108,6 @@
 
     </div>
 
-    ADD HAND ICON
-
-
     <!--<div>
 
         <h2 class="con-head">Contact Me
@@ -90,9 +119,11 @@
         </h2>
 
     </div>-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f31009ec0d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
