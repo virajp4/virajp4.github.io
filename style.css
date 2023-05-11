@@ -62,6 +62,12 @@ i {
     color: #f1faee;
 }
 
+@media (max-width: 1024px) {
+    .about-text b {
+        color: #EC8602;
+    }
+}
+
 .about-text:hover b {
     color: #ec8602;
     transition: 0.3s;
