@@ -2,8 +2,8 @@ body,
 html {
     height: 100vh;
     background-color: #131212;
+    color: white;
     font-family: 'Nunito', sans-serif;
-    color: #ec8602;
     scroll-behavior: smooth;
     margin: 0;
 }
@@ -41,6 +41,7 @@ i {
 
 .intro1 {
     font-size: 2.8rem;
+    color: #ec8602;
 }
 
 @media (max-width: 1200px) {
@@ -49,7 +50,7 @@ i {
     }
 }
 
-.about-head {
+.head {
     font-size: 50px;
     text-align: center;
     color: #ec8602;
@@ -73,12 +74,6 @@ i {
     transition: 0.3s;
 }
 
-.skills-head {
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: underline 3px;
-}
-
 .skills-body {
     display: flex;
     justify-content: space-evenly;
@@ -99,4 +94,29 @@ i {
 
 .prog h3 {
     width: 100px;
+}
+
+.card {
+    background-color: #242323;
+    color: white;
+}
+
+.card .btn {
+    background-color: #EC8602;
+}
+
+.download {
+    background-color: #ec8602;
+}
+
+.download:hover {
+    background-color: #EC8602;
+}
+
+.social-img:hover {
+    color: #ec8602;
+}
+
+.footer {
+    background-color: #242323;
 }
