@@ -105,6 +105,11 @@ i {
     background-color: #EC8602;
 }
 
+.downresume {
+    text-decoration: none;
+    color: #131212;
+}
+
 .download {
     background-color: #ec8602;
 }
