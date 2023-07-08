@@ -101,8 +101,13 @@ i {
     color: white;
 }
 
-.card .btn {
+.btn1 {
     background-color: #EC8602;
+}
+
+.btn1:hover {
+    color: #131212;
+    background-color: #EC8602
 }
 
 .downresume {
