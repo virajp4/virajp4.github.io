@@ -1,229 +1,112 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viraj Patel | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Viraj Patel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexstyle.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md fixed-top container-fluid w-75 border border-black rounded-bottom-4">
-        <div class="container-fluid">
-            <a class="navbar-brand px-2" href="#intro">Viraj Patel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlink"
-                aria-controls="navlink" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggle">
-                    <i class="fa-sharp fa-solid fa-bars"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navlink">
-                <ul class="navbar-nav mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-head">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Résumé</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#socials">Socials</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="">VIRAJ PATEL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link underline" href="#">Home</a>
+                <a class="nav-item nav-link underline" href="#">About</a>
+                <a class="nav-item nav-link underline" href="#">Projects</a>
+                <a class="nav-item nav-link underline" href="#">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="intro container-fluid px-3 m-0" id="intro">
-        <div class="row align-items-center p-0">
-            <div class="text-center mt-2 col-lg-6 d-none d-lg-block p-0">
-                <h2 class="intro1"> Hello there, <br> Welcome to my portfolio!</h2>
-            </div>
-            <div class="photodiv col-lg-6 p-0 m-0">
-                <img class="photo1 img-fluid rounded-circle w-100" src="photos/me.png">
+    <div class="intro-wrapper">
+        <div class="intro">
+            <h1 class="intro-head mb-5">Bonjour! I’m Viraj,</h1>
+            <h7 class="mb-3 d-block">Here’s my TLDR</h7>
+            <h7 class="mb-3 d-block">I am an undergraduate Computer Science student from S.R.M. Institute of Science and
+                Techology, Chennai, India.
+                My coursework has provided me with a strong foundation in Python, C++ and Software Engineering.</h7>
+            <h7 class="mb-3 d-block">I’m passionate about Open Source development, and always on the lookout for solving
+                real-world problems
+                with the help of programming. I enjoy tackling LeetCode problems and working on new projects.
+                Photography and gaming are amongst my other pastimes.</h7>
+            <h7 class="mb-3 d-block">Currently, I’m seeking to attain an internship role in Software Engineering.
+                <br>Check out some of my interesting projects below 👇
+            </h7>
+        </div>
+    </div>
+    
+    <div class="featured-wrapper">
+        <div class="featured">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="photos/calc.png" class="card-img-top p-3">
+                    <div class="card-body">
+                        <a class="card-title" href="https://github.com/virajp4/Simple-Calculator" target="_blank">Calculator</a>
+                        <p class="card-text">A simple Calculator GUI, with its functionalities implemented with the help of Python & Tkinter library.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/chess.png" class="card-img-top p-3">
+                    <div class="card-body">
+                        <a class="card-title" href="https://github.com/virajp4/Chess" target="_blank">Chess game</a>
+                        <p class="card-text">A 1v1 Chess game with several additional functionalities, designed with high level Object Oriented Programming. 
+                            Made possible with the help of Python & Pygame library.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/gpa.png" class="card-img-top p-3">
+                    <div class="card-body">
+                        <a class="card-title" href="https://github.com/virajp4/GPA-Hub" target="_blank">GPA-Hub</a>
+                        <p class="card-text">A website that helps the students of my college to calculate their GPA.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="about container-fluid px-0 pt-5 pb-3" id="about-head">
-        <h2 class="head pt-3">About Me</h2>
-        <p class="about-text text-center mt-3 mx-5 bolder">
-            I am an undergraduate <b>Computer Science</b> student who is intrigued about the recent advancements
-            <b>Artificial Intelligence.</b> <br>
-            I am passionate about <b>Open Source development,</b> while I enjoy <b>problem-solving</b> via
-            <b>programming.</b> <br>
-            My coursework has provided me with a strong foundation in <b>Python</b> and <b>C++.</b> <br>
-            <b>Photography</b> and <b>gaming</b> are one of my many stimulating pastimes. <br> <br>
-            Currently I'm seeking to attain an <b>internship</b> role in <b>Software Engineering.</b>
-        </p>
-    </div>
-
-    <div class="skills container-fluid px-0 pt-3" id="skills">
-
-        <h2 class="head text-center pt-5">Skills</h2>
-        <div class="skills-body mt-4 text-center row">
-            <div class="prog py col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-python fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog html col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-html5 fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog css col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-css3-alt fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog js col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-square-js fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog react col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-react fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog cpp col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-solid fa-c fa-xl"></i>
-                <i class="fa-solid fa-plus fa-xs"></i>
-                <i class="fa-solid fa-plus fa-xs"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
-            <div class="prog git col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
-                <i class="fa-brands fa-git-alt fa-2xl"></i><br>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-                <i class="fa-sharp fa-solid fa-star fa-2xs"></i>
-            </div>
+    <div class="footer">
+        <div class="name-box">
+            <h7 class="name">Viraj Patel</h7>
         </div>
-
-    </div>
-
-    <div class="projects container-fluid px-0 pt-3" id="projects">
-        <h2 class="project head pt-5">Projects</h2>
-        <div class="px-3 pb-3">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-3 my-3">
-                    <div class="card mx-2">
-                        <img src="photos/calc.png" class="card-img-top p-2">
-                        <div class="card-body">
-                            <h5><b>Simple Calculator</b></h5>
-                            <p class="card-text">A simple Calculator, with all its basic functionalities implemented
-                                using Tkinter.</p>
-                            <a href="https://github.com/virajp4/Simple-Calculator" class="btn btn1"
-                                target="_blank"><b>Github</b></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-3 my-3">
-                    <div class="card mx-2">
-                        <img src="photos/tic.png" class="card-img-top p-2">
-                        <div class="card-body">
-                            <h5><b>Tic-Tac-Toe</b></h5>
-                            <p class="card-text">The classic game with a simple GUI, made using Tkinter.</p>
-                            <a href="https://github.com/virajp4/Tic-Tac-Toe-PvP" class="btn btn1"
-                                target="_blank"><b>Github</b></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-3 my-3">
-                    <div class="card mx-2">
-                        <img src="photos/chess.png" class="card-img-top p-2">
-                        <div class="card-body">
-                            <h5><b>Chess game</b></h5>
-                            <p class="card-text">A PvP based Chess game, made using the Pygame library.</p>
-                            <a href="https://github.com/virajp4/Chess" class="btn btn1" target="_blank"><b>Github</b></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-3 my-3">
-                    <div class="card mx-2">
-                        <img src="photos/quiz.png" class="card-img-top p-2">
-                        <div class="card-body">
-                            <h5><b>QuizQuarry</b></h5>
-                            <p class="card-text">A quiz website made with HTML, CSS & JS.</p>
-                            <a href="https://github.com/virajp4/QuizQuarry" class="btn btn1" target="_blank"><b>Github</b></a>
-                            <a href="https://virajp4.me/QuizQuarry/" class="btn btn2" target="_blank"><b><i class="fa-solid fa-link"></i></b></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-3 my-3">
-                    <div class="card mx-2">
-                        <img src="photos/gpahub.png" class="card-img-top p-2">
-                        <div class="card-body">
-                            <h5><b>GPA Hub</b></h5>
-                            <p class="card-text">A website to calculate your GPA.</p>
-                            <a href="https://github.com/virajp4/GPA-Hub" class="btn btn1" target="_blank"><b>Github</b></a>
-                            <a href="https://virajp4.me/GPA-Hub/" class="btn btn2" target="_blank"><b><i
-                                        class="fa-solid fa-link"></i></b></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="icon-box">
+            <a class="icon" href="https://www.linkedin.com/in/virajpatel4/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+            <a class="icon" href="https://github.com/virajp4/" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a class="icon" href="https://www.instagram.com/viraj.patel4/" target="_blank">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
         </div>
     </div>
 
-    <div class="bottom row pb-5">
-        <div class="resume col-6 text-center mt-3" id="resume">
-            <h2 class="resume head">Résumé</h2>
-            <button type="button" class="btn download mt-2">
-                <a class="downresume" href="Viraj Patel Resume.pdf" download><b>Download Résumé</b></a>
-            </button>
-        </div>
-        <div class="socials col-6 text-center mt-3" id="socials">
-            <h2 class="socials head">Socials</h2>
-            <div class="justify-content-evenly mt-2">
-                <a class="btn" href="https://github.com/virajp4" target="_blank" role="button">
-                    <i class="fa-brands fa-github fa-2xl social-img"></i>
-                </a>
-                <a class="btn" href="https://www.linkedin.com/in/virajpatel4" target="_blank" role="button">
-                    <i class="fa-brands fa-linkedin fa-2xl social-img"></i>
-                </a>
-                <a class="btn" href="https://www.instagram.com/viraj.patel4" target="_blank" role="button">
-                    <i class="fa-brands fa-instagram fa-2xl social-img"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer text-center py-2">
-        <h6 class="m-0">Made with 🧡 by Viraj</h6>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f31009ec0d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
