@@ -1,0 +1,343 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+body {
+    background-color: #090909;
+    color: white;
+    width: 100%;
+    font-family: 'Chivo', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #090909;
+    padding: 1.5rem 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar-brand {
+    margin-left: 4.4%;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item:nth-of-type(2) {
+    text-decoration: 0.5px underline;
+    text-underline-offset: 6px;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: 3.8px;
+    left: 7px;
+    right: 5.8px;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav {
+    width: 93%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+    text-align: right;
+}
+
+.nav-item {
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10rem;
+    margin-top: 8rem;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-family: 'Chivo', sans-serif;
+    width: 40%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    margin-right: 50px;
+}
+
+.image {
+    width: 30%;
+    height: 100%;
+}
+
+.image>img {
+    min-width: 300px;
+    max-height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 1120px) {
+    .content {
+        width: fit-content;
+    }
+
+    .intro {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .image {
+        width: 30%;
+    }
+
+    .image>img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 880px) {
+    .content {
+        width: 80%;
+    }
+
+    .intro {
+        width: 50%;
+    }
+
+    .image {
+        width: fit-content;
+    }
+
+    .image>img {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .intro {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .image {
+        order: -1;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .image>img {
+        max-height: 700px;
+        min-width: 350px;
+    }
+}
+
+.intro-head {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 5rem 0 2rem 4.4%;
+}
+
+.name-box {
+    font-size: 1.5rem;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon {
+    margin: 0 0.5rem;
+}
+
+.icon:nth-of-type(1) {
+    margin-left: 0.1rem;
+}
+
+.icon:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.15s ease-in-out;
+}

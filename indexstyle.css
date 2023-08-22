@@ -148,8 +148,6 @@ body {
     width: 100%;
     background-color: #090909;
     padding: 1.5rem 0;
-    position: fixed;
-    z-index: 1000;
 }
 
 .navbar-brand {
@@ -165,14 +163,19 @@ body {
     position: relative;
 }
 
+.nav-item:nth-of-type(1) {
+    text-decoration: 0.5px underline;
+    text-underline-offset: 6px;
+}
+
 .underline::after {
     content: '';
     position: absolute;
     transform: scaleX(0);
     height: 0.5px;
-    bottom: 3.5px;
-    left: 6.2px;
-    right: 5.6px;
+    bottom: 3.8px;
+    left: 7px;
+    right: 5.8px;
     background-color: white;
     transform-origin: bottom left;
     transition: transform 0.3s ease-out;
@@ -283,6 +286,8 @@ body {
 }
 
 .footer {
+    position: relative;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -307,4 +312,9 @@ body {
 
 .icon:nth-of-type(1) {
     margin-left: 0.1rem;
+}
+
+.icon:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.15s ease-in-out;
 }
