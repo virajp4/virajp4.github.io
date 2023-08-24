@@ -148,7 +148,7 @@ body {
     width: 100%;
     background-color: #090909;
     padding: 1.5rem 0;
-    position: relative;
+    position: fixed;
     z-index: 1000;
     top: 0;
 }
@@ -178,7 +178,7 @@ body {
     height: 0.5px;
     bottom: 3.8px;
     left: 7px;
-    right: 5.8px;
+    right: 6.2px;
     background-color: white;
     transform-origin: bottom left;
     transition: transform 0.3s ease-out;
@@ -206,27 +206,23 @@ body {
 }
 
 .contact-wrapper {
+    height: fit-content;
+    width: 100%;
+    padding: 5% 4.4%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 80vh;
-    padding: 5%;
 }
 
 .contact {
-    width: 80%;
+    width: 75%;
 }
 
 .info-wrapper {
-    width: fit-content;
+    height: fit-content;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
-    width: 50%;
+    width: 70%;
 }
 
 .info-head {
@@ -236,17 +232,117 @@ body {
 .info-text {
     font-size: 1.1rem;
     font-weight: lighter;
-    line-height: 1.65rem;
+    line-height: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icn {
+    margin: 0 0.5rem;
+}
+
+.icn:nth-of-type(1) {
+    margin-left: 0.1rem;
+}
+
+.icn:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.15s ease-in-out;
+}
+
+.name {
     width: 100%;
 }
 
-.form-wrapper {
+.title {
+    font-size: 18px;
+}
+
+.req {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.name-input-wrapper {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.name-input {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: beige;
+    width: 100%;
+}
+
+.first {
+    margin-right: 10px;
+}
+
+.field {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 11px;
+    margin-bottom: 10px;
+}
+
+.msg {
+    height: 100px;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 0;
+}
+
+@media (max-width: 767.9px) {
+    .underline::after {
+        transform: scaleX(0);
+    }
+
+    .underline:hover::after {
+        transform: scaleX(0);
+    }
+
+    .contact-wrapper {
+        padding: 5% 0;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .info-wrapper {
+        padding: 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .form-wrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1120px) {
+    .contact {
+        width: 90%;
+    }
+
+    .info {
+        width: 90%;
+    }
 }
 
 .footer {

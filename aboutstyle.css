@@ -178,7 +178,7 @@ body {
     height: 0.5px;
     bottom: 3.8px;
     left: 7px;
-    right: 5.8px;
+    right: 6.2px;
     background-color: white;
     transform-origin: bottom left;
     transition: transform 0.3s ease-out;
@@ -187,6 +187,16 @@ body {
 .underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media (max-width: 767.9px) {
+    .underline::after {
+        transform: scaleX(0);
+    }
+
+    .underline:hover::after {
+        transform: scaleX(0);
+    }
 }
 
 .navbar-brand {
@@ -281,6 +291,7 @@ body {
 
 @media (max-width: 600px) {
     .content {
+        width: 100%;
         flex-direction: column;
         align-self: flex-start;
     }
