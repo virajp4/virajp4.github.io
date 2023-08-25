@@ -214,7 +214,7 @@ body {
 }
 
 .contact {
-    width: 75%;
+    width: 80%;
 }
 
 .info-wrapper {
@@ -259,6 +259,25 @@ body {
     width: 100%;
 }
 
+.alert {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 9px;
+    width: fit-content;
+    margin: 0 0 10px;
+    line-height: 1.4;
+}
+
+.alert-icon {
+    padding: 0 9px 0 0;
+}
+
+.alert-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .title {
     font-size: 18px;
 }
@@ -293,6 +312,11 @@ body {
     color: black;
     padding: 11px;
     margin-bottom: 10px;
+}
+
+.field:not([style*="background-color: white"]):hover {
+    opacity: 0.8;
+    transition: 0.2s opacity linear;
 }
 
 .msg {
