@@ -215,6 +215,68 @@ body {
     }
 }
 
+.content-wrapper {
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-top {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-bottom {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.featured-wrapper {
+    width: 95%;
+    margin-bottom: 5rem;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 35rem;
+    background-color: #090909;
+}
+
+.card-title {
+    line-height: 32px;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-decoration: 1px underline;
+    text-underline-offset: 8px;
+}
+
+.card-title:hover {
+    text-decoration: 1px underline;
+}
+
+.card-text {
+    margin-top: 35px;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
 .footer {
     position: relative;
     bottom: 0;
