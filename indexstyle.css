@@ -296,6 +296,19 @@ body {
     text-underline-offset: 8px;
 }
 
+.webapp {
+    text-decoration: none;
+}
+
+.webapp-title {
+    text-decoration: 1px underline;
+    text-underline-offset: 8px;
+}
+
+.webapp-link:hover {
+    text-decoration: none;
+}
+
 .card-title:hover {
     text-decoration: 1px underline;
 }

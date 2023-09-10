@@ -271,6 +271,19 @@ body {
     text-decoration: 1px underline;
 }
 
+.webapp {
+    text-decoration: none;
+}
+
+.webapp-title {
+    text-decoration: 1px underline;
+    text-underline-offset: 8px;
+}
+
+.webapp-link:hover {
+    text-decoration: none;
+}
+
 .card-text {
     margin-top: 35px;
     font-size: 1.1rem;
