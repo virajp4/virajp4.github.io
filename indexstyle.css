@@ -313,6 +313,10 @@ body {
     text-decoration: 1px underline;
 }
 
+.multiline {
+    line-height: 1.25;
+}
+
 .card-text {
     margin-top: 35px;
     font-size: 1.1rem;
