@@ -31,8 +31,9 @@
                 <a class="nav-item nav-link underline" href="index.html">Home</a>
                 <a class="nav-item nav-link underline" href="about.html">About</a>
                 <a class="nav-item nav-link underline" href="projects.html">Projects</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link underline" href="Viraj Patel Resume.pdf" download>Resume</a>
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
+                <a class="nav-item nav-link underline"
+                    href="https://drive.google.com/file/d/1Rd8rJVjfjGlRthLKfGP7ugsecGSTqnP7/view?usp=sharing" target="_blank">Resume</a>
             </div>
         </div>
     </nav>
@@ -164,6 +165,16 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
