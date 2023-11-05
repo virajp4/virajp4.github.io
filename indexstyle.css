@@ -64,6 +64,7 @@ body {
 }
 
 .featured {
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +81,7 @@ body {
 .card {
     height: 35rem;
     background-color: transparent;
+    color: white;
 }
 
 .card-title {
@@ -97,6 +99,10 @@ body {
 .webapp-title {
     text-decoration: 1px underline;
     text-underline-offset: 8px;
+}
+
+.webapp-link {
+    text-decoration: none;
 }
 
 .webapp-link:hover {
