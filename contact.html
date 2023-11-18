@@ -15,32 +15,34 @@
     <link rel="stylesheet" href="contactstyle.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="contact.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="">VIRAJ PATEL</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="navbar-toggler-icon">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav">
                 <a class="nav-item nav-link underline" href="index.html">Home</a>
                 <a class="nav-item nav-link underline" href="about.html">About</a>
                 <a class="nav-item nav-link underline" href="projects.html">Projects</a>
                 <a class="nav-item nav-link act" href="contact.html">Contact</a>
                 <a class="nav-item nav-link underline"
-                    href="https://drive.google.com/file/d/1Rd8rJVjfjGlRthLKfGP7ugsecGSTqnP7/view?usp=sharing" target="_blank">Resume</a>
+                    href="https://drive.google.com/file/d/1Rd8rJVjfjGlRthLKfGP7ugsecGSTqnP7/view?usp=sharing"
+                    target="_blank">Resume</a>
             </div>
         </div>
     </nav>
 
     <div class="contact-wrapper mt-5">
         <div class="contact row mt-4">
-            <div class="info-wrapper col-md-6 mb-5">
+            <div class="info-wrapper col-md-6 mb-5" data-aos="fade-down" data-aos-duration="1000">
                 <div class="info">
                     <h1 class="info-head mb-4">Want to chat?</h1>
                     <h7 class="info-text mt-1">
@@ -60,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form-wrapper col-md-6">
+            <div class="form-wrapper col-md-6" data-aos="fade-up" data-aos-duration="1000">
                 <div class="form">
                     <div class="name mb-4">
                         <div class="alert alert-danger full-alert" role="alert">
@@ -165,6 +167,10 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="contact.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
