@@ -56,29 +56,15 @@ body {
     line-height: 32px;
     font-size: 1.9rem;
     font-weight: 400;
-    text-decoration: 1px underline;
-    text-underline-offset: 8px;
-}
-
-.card-title:hover {
-    text-decoration: 1px underline;
-}
-
-.webapp-link {
-    text-decoration: none;
-}
-
-.webapp-title {
-    text-decoration: 1px underline;
-    text-underline-offset: 8px;
 }
 
 .multiline {
     line-height: 1.25;
 }
 
-.webapp-link:hover {
-    text-decoration: none;
+.webapp-link {
+    text-decoration: 1px underline;
+    text-underline-offset: 8px;
 }
 
 .card-body {

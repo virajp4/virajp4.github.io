@@ -88,8 +88,6 @@ body {
     line-height: 32px;
     font-size: 1.9rem;
     font-weight: 400;
-    text-decoration: 1px underline;
-    text-underline-offset: 8px;
 }
 
 .webapp {
@@ -102,15 +100,8 @@ body {
 }
 
 .webapp-link {
-    text-decoration: none;
-}
-
-.webapp-link:hover {
-    text-decoration: none;
-}
-
-.card-title:hover {
     text-decoration: 1px underline;
+    text-underline-offset: 8px;
 }
 
 .multiline {
