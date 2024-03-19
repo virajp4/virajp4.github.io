@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chivo: ["Chivo", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

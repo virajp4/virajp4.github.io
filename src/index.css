@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lineit {
+  position: relative;
+  display: inline-block;
+}
+
+.lineit::after {
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  height: 0.5px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.lineit:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
