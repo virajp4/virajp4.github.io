@@ -1,6 +1,4 @@
-import React from "react";
-
-import NavLinks from "./NavLinks.jsx";
+import NavLink from "./NavLink";
 
 const links = [
   {
@@ -29,15 +27,10 @@ const links = [
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-black">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-7 px-[40px] xl:px-[10px]">
-          <a
-            href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <span className="whitespace-nowrap text-white text-xl">
-              VIRAJ PATEL
-            </span>
+      <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-7 px-[40px] md:px-[25px]">
+          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <span className="whitespace-nowrap text-white text-xl">VIRAJ PATEL</span>
           </a>
           <button
             data-collapse-toggle="navbar-default"
@@ -52,12 +45,7 @@ export default function Navbar() {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-normal flex flex-col p-4 md:p-0 md:flex-row md:space-x-4">
               {links.map((link, index) => (
-                <NavLinks
-                  key={index}
-                  title={link.title}
-                  link={link.link}
-                  target={link.target}
-                />
+                <NavLink key={index} title={link.title} link={link.link} target={link.target} />
               ))}
             </ul>
           </div>

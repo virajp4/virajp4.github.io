@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   transform: scaleX(0);
-  height: 0.5px;
+  height: 1px;
   bottom: -1px;
   left: 0;
   right: 0;
