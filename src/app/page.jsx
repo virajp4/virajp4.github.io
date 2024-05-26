@@ -1,11 +1,11 @@
+'use client';
 import projects from "@/components/ProjectList";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
-
   return (
-    <div>
-      <div className="md:h-screen flex justify-center items-center" data-aos="fade-in" data-aos-duration="1500">
+    <div className="mt-28 sm:mt-12 md:mt-5 lg:mt-0">
+      <div className="min-h-screen flex justify-center items-center" data-aos="fade-in" data-aos-duration="1500">
         <div className="w-[80%] sm:w-[70%] md:w-[60%] flex flex-col gap-7 text-lg">
           <h1 className="text-3xl">Bonjour! I’m Viraj,</h1>
           <div className="flex flex-col gap-5">
@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex justify-center items-center" data-aos="fade-in" data-aos-duration="800">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-2">
-          {projects.map((project, idx) => idx < 3 && <ProjectCard key={idx} {...project} />)}
+          {projects.map((project, idx) => project.class === "featured" && <ProjectCard key={idx} {...project} />)}
         </div>
       </div>
     </div>

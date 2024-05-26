@@ -1,3 +1,6 @@
+"use client";
+import { useTheme } from "next-themes";
+
 import NavLink from "./NavLink";
 
 const links = [
@@ -25,6 +28,8 @@ const links = [
 ];
 
 export default function Navbar() {
+  const { setTheme } = useTheme();
+  setTheme("dark");
   return (
     <>
       <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full z-50">
@@ -33,16 +38,16 @@ export default function Navbar() {
             <span className="whitespace-nowrap text-white text-xl">VIRAJ PATEL</span>
           </a>
           <button
-            data-collapse-toggle="navbar-default"
+            data-collapse-toggle="nav-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-black dark:focus:ring-gray-600"
+            aria-controls="nav-default"
             aria-expanded="false"
           >
             <span className="sr-only">Open nav menu</span>
             <i className="fa-solid fa-bars text-white fa-lg"></i>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div className="hidden w-full md:block md:w-auto" id="nav-default">
             <ul className="font-normal flex flex-col p-4 md:p-0 md:flex-row md:space-x-4">
               {links.map((link, index) => (
                 <NavLink key={index} title={link.title} link={link.link} target={link.target} />

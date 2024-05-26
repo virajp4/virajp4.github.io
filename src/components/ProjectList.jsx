@@ -24,6 +24,7 @@ const projects = [
     image: MadeByKids,
     github: "",
     website: "",
+    class: "featured"
   },
   {
     name: "Portfoliho",
@@ -32,6 +33,7 @@ const projects = [
     image: Portfoliho,
     github: "",
     website: "",
+    class: "featured"
   },
   {
     name: "Notes Hub",
@@ -40,6 +42,7 @@ const projects = [
     image: NotesHub,
     github: "https://github.com/virajp4/Notes-Hub",
     website: "https://thenoteshub.vercel.app",
+    class: "featured"
   },
   {
     name: "Discover India",
@@ -121,6 +124,7 @@ const projects = [
     image: QuizQuarry,
     github: "https://github.com/virajp4/QuizQuarry",
     website: "https://www.virajp4.me/QuizQuarry",
+    class: "simple"
   },
   {
     name: "Chess game",
@@ -128,6 +132,7 @@ const projects = [
     image: Chess,
     github: "https://github.com/virajp4/Chess",
     website: "",
+    class: ""
   },
   {
     name: "Calculator",
@@ -135,6 +140,7 @@ const projects = [
     image: Calculator,
     github: "https://github.com/virajp4/Simple-Calculator",
     website: "",
+    class: "simple"
   },
   {
     name: "Tic-Tac-Toe App",
@@ -142,6 +148,7 @@ const projects = [
     image: TicTacToe,
     github: "https://github.com/virajp4/Tic-Tac-Toe-PvP",
     website: "",
+    class: "simple"
   },
 ];
 
