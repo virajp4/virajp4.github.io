@@ -14,6 +14,7 @@ import Chess from "@/assets/projects/chess.png";
 import Calculator from "@/assets/projects/calc.png";
 import TicTacToe from "@/assets/projects/tic.png";
 import MadeByKids from "@/assets/projects/madebykids.png";
+import Portfoliho from "@/assets/projects/portfoliho.png";
 
 const projects = [
   {
@@ -28,9 +29,9 @@ const projects = [
     name: "Portfoliho",
     description:
       "A stocks portfolio analysis website that provides users with a detailed analysis of their stock portfolio along with the functionality to compare their own portfolio with another.",
-    image: "",
+    image: Portfoliho,
     github: "",
-    website: "https://portfoliho.com",
+    website: "",
   },
   {
     name: "Notes Hub",

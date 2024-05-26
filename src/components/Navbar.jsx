@@ -27,7 +27,7 @@ const links = [
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full">
+      <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-7 px-[40px] md:px-[25px]">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <span className="whitespace-nowrap text-white text-xl">VIRAJ PATEL</span>
