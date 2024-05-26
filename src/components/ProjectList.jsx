@@ -13,12 +13,29 @@ import QuizQuarry from "@/assets/projects/quiz.png";
 import Chess from "@/assets/projects/chess.png";
 import Calculator from "@/assets/projects/calc.png";
 import TicTacToe from "@/assets/projects/tic.png";
+import MadeByKids from "@/assets/projects/madebykids.png";
 
 const projects = [
   {
+    name: "MadeByKids",
+    description:
+      "A website that allows talnted kids to showcase and sell their creations. Implemented custom authentication, e-commerce functionalities, and a user-friendly UI.",
+    image: MadeByKids,
+    github: "",
+    website: "",
+  },
+  {
+    name: "Portfoliho",
+    description:
+      "A stocks portfolio analysis website that provides users with a detailed analysis of their stock portfolio along with the functionality to compare their own portfolio with another.",
+    image: "",
+    github: "",
+    website: "https://portfoliho.com",
+  },
+  {
     name: "Notes Hub",
     description:
-      "A website that provides subject notes and resources for students of SRM Institute. Made using the MERN stack. Utilized various react libraries and hooks such as react-router-dom, react-toastify, axios, useContext etc.",
+      "A website that provides subject notes and resources for students of SRM Institute. Utilized various react libraries and hooks such as react-router-dom, react-toastify, axios, useContext etc.",
     image: NotesHub,
     github: "https://github.com/virajp4/Notes-Hub",
     website: "https://thenoteshub.vercel.app",
@@ -26,7 +43,7 @@ const projects = [
   {
     name: "Discover India",
     description:
-      "A website that enables users to explore the various tourist destinations in India. Also supports user account creation, adding new destinations, and rating existing destinations. Made with MERN.",
+      "A website that enables users to explore the various tourist destinations in India. Also supports user account creation, adding new destinations, and rating existing destinations.",
     image: DiscoverIndia,
     github: "https://github.com/virajp4/Discover-India",
     website: "",
@@ -71,15 +88,14 @@ const projects = [
   },
   {
     name: "Reaction Time Test",
-    description: "A simple React app that allows users to check their reaction time. Made with the help of various React Hooks and CSS.",
+    description: "A simple React app that allows users to check their reaction time.",
     image: ReactionTime,
     github: "https://github.com/virajp4/Reaction-Time-Test",
     website: "https://reaction-virajp4.vercel.app/",
   },
   {
     name: "Tic-Tac-Toe WebApp",
-    description:
-      "This React-based Tic Tac Toe web app delivers an interactive experience, allowing 2 users to play against each other. Made with the help of React Hooks and CSS.",
+    description: "This React-based Tic Tac Toe web app delivers an interactive experience, allowing 2 users to play against each other.",
     image: TicTacToeReact,
     github: "https://github.com/virajp4/Tic-Tac-Toe-React",
     website: "https://tictactoe-virajp4.vercel.app/",
