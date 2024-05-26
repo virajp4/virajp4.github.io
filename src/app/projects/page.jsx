@@ -1,7 +1,20 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import projects from "@/components/ProjectList";
 import ProjectCard from "@/components/ProjectCard";
+
+const TabContent = ({ value }) => {
+  let proj = projects.filter((project) => project.class === value);
+  if (value == "all") proj = projects;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-2 mt-10">
+      {proj.map((project, idx) => (
+        <ProjectCard key={idx} {...project} />
+      ))}
+    </div>
+  );
+};
 
 export default function page() {
   return (
@@ -16,12 +29,14 @@ export default function page() {
         <Tabs defaultValue="featured" className="w-full flex items-center justify-center flex-col">
           <TabsList>
             <TabsTrigger value="featured">Featured</TabsTrigger>
-            <TabsTrigger value="python">Python</TabsTrigger>
+            <TabsTrigger value="all">All</TabsTrigger>
           </TabsList>
-          <TabsContent value="featured" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-2 mt-10">
-            {projects.map((project, idx) => project.class === "featured" && <ProjectCard key={idx} {...project} />)}
+          <TabsContent value="featured">
+            <TabContent value="featured" />
           </TabsContent>
-          <TabsContent value="python"></TabsContent>
+          <TabsContent value="all">
+            <TabContent value="all" />
+          </TabsContent>
         </Tabs>
       </div>
     </div>

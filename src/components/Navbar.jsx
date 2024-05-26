@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import NavLink from "./NavLink";
@@ -27,9 +28,11 @@ const links = [
   },
 ];
 
-export default function Navbar() {
+export default function NavBar() {
   const { setTheme } = useTheme();
-  setTheme("dark");
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
   return (
     <>
       <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full z-50">
