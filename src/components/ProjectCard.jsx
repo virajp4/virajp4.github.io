@@ -1,6 +1,8 @@
+import { Badge } from "@/components/ui/badge";
+
 import Image from "next/image";
 
-export default function ProjectCard({ name, description, image, github, website }) {
+export default function ProjectCard({ name, description, image, github, website, stack }) {
   return (
     <div className="p-0.5 z-10 overflow-hidden">
       <div className="bg-black p-1.5 h-full">
@@ -22,6 +24,13 @@ export default function ProjectCard({ name, description, image, github, website 
             )}
           </div>
           <p className="mt-5 text-lg leading-normal cursor-default">{description}</p>
+        </div>
+        <div className="flex gap-1 mt-2 flex-wrap">
+          {stack.map((skill, idx) => (
+            <Badge key={idx} variant="secondary" className={"font-normal cursor-default"}>
+              {skill}
+            </Badge>
+          ))}
         </div>
       </div>
     </div>

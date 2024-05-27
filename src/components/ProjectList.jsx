@@ -15,6 +15,8 @@ import Calculator from "@/assets/projects/calc.png";
 import TicTacToe from "@/assets/projects/tic.png";
 import MadeByKids from "@/assets/projects/madebykids.png";
 import Portfoliho from "@/assets/projects/portfoliho.png";
+import Handwritten from "@/assets/projects/digits.png";
+import Plagarism from "@/assets/projects/plag.png";
 
 const projects = [
   {
@@ -24,7 +26,8 @@ const projects = [
     image: MadeByKids,
     github: "",
     website: "",
-    class: "featured"
+    class: ["featured", "fullStack"],
+    stack: ["React", "Node.js", "MongoDB", "Express.js", "Internship"],
   },
   {
     name: "Portfoliho",
@@ -33,7 +36,8 @@ const projects = [
     image: Portfoliho,
     github: "",
     website: "",
-    class: "featured"
+    class: ["featured", "fullStack"],
+    stack: ["React", "Node.js", "MongoDB", "Express.js", "Firebase", "AlphaVantage API"],
   },
   {
     name: "Notes Hub",
@@ -42,7 +46,8 @@ const projects = [
     image: NotesHub,
     github: "https://github.com/virajp4/Notes-Hub",
     website: "https://thenoteshub.vercel.app",
-    class: "featured"
+    class: ["featured", "fullStack"],
+    stack: ["React", "Node.js", "MongoDB", "Express.js"],
   },
   {
     name: "Discover India",
@@ -51,6 +56,8 @@ const projects = [
     image: DiscoverIndia,
     github: "https://github.com/virajp4/Discover-India",
     website: "",
+    class: ["fullStack"],
+    stack: ["React", "Node.js", "MongoDB", "Express.js"],
   },
   {
     name: "Tech Connect",
@@ -59,6 +66,8 @@ const projects = [
     image: TechConnect,
     github: "https://github.com/upes-open/TechConnect-2.0",
     website: "",
+    class: ["frontEnd", "openSource"],
+    stack: ["React", "Node.js", "Express.js", "Open Source"],
   },
   {
     name: "Intern Ways",
@@ -67,6 +76,8 @@ const projects = [
     image: InternWays,
     github: "",
     website: "https://www.internways.com",
+    class: ["fullStack"],
+    stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
     name: "Sensitive Info Blurring",
@@ -75,6 +86,8 @@ const projects = [
     image: SensitiveInfoBlurring,
     github: "https://github.com/upes-open/OSoC-Sensitive-Information-Blurring-App",
     website: "",
+    class: ["frontEnd", "openSource"],
+    stack: ["React", "Node.js", "Express.js", "Open Source"],
   },
   {
     name: "MediaMorph",
@@ -82,6 +95,8 @@ const projects = [
     image: MediaMorph,
     github: "https://github.com/upes-open/MediaMorph",
     website: "https://chromewebstore.google.com/detail/pjdknhjepombeompfmgacjggmojhemoh",
+    class: ["frontEnd", "openSource"],
+    stack: ["JavaScript", "Extension", "Chrome API", "Open Source"],
   },
   {
     name: "Meeting Minutes Generator Extension",
@@ -89,6 +104,8 @@ const projects = [
     image: MeetingMinutes,
     github: "https://github.com/upes-open/OSoC-MeetingMinutes-MOM-Generator",
     website: "",
+    class: ["frontEnd", "openSource"],
+    stack: ["JavaScript", "Extension", "Chrome API", "Open Source"],
   },
   {
     name: "Reaction Time Test",
@@ -96,6 +113,8 @@ const projects = [
     image: ReactionTime,
     github: "https://github.com/virajp4/Reaction-Time-Test",
     website: "https://reaction-virajp4.vercel.app/",
+    class: ["frontEnd"],
+    stack: ["React"],
   },
   {
     name: "Tic-Tac-Toe WebApp",
@@ -103,6 +122,8 @@ const projects = [
     image: TicTacToeReact,
     github: "https://github.com/virajp4/Tic-Tac-Toe-React",
     website: "https://tictactoe-virajp4.vercel.app/",
+    class: ["frontEnd"],
+    stack: ["React"],
   },
   {
     name: "Compound Interest Calculator",
@@ -110,6 +131,8 @@ const projects = [
     image: CompoundInterest,
     github: "https://github.com/virajp4/Compound-Interest-Calculator",
     website: "https://interest-virajp4.vercel.app/",
+    class: ["frontEnd"],
+    stack: ["React"],
   },
   {
     name: "GPA-Wiz",
@@ -117,6 +140,8 @@ const projects = [
     image: GPAWiz,
     github: "https://github.com/virajp4/GPA-Wiz",
     website: "https://www.virajp4.me/GPA-Wiz/",
+    class: ["frontEnd"],
+    stack: ["JavaScript", "HTML", "CSS"],
   },
   {
     name: "QuizQuarry",
@@ -124,7 +149,26 @@ const projects = [
     image: QuizQuarry,
     github: "https://github.com/virajp4/QuizQuarry",
     website: "https://www.virajp4.me/QuizQuarry",
-    class: "simple"
+    class: ["frontEnd"],
+    stack: ["JavaScript", "HTML", "CSS"],
+  },
+  {
+    name: "Handwritten Digit Recognition",
+    description: "A simple Handwritten Digit Recognition model using the MNIST dataset, implemented using TensorFlow and Keras.",
+    image: Handwritten,
+    github: "https://github.com/virajp4/Hand-Written-Digit-Recognition",
+    website: "",
+    class: ["python"],
+    stack: ["Python", "TensorFlow", "Keras", "Machine Learning", "Internship"],
+  },
+  {
+    name: "Plagiarism Checker",
+    description: "A plagiarism checker that compares two text files and provides the percentage of similarity between them.",
+    image: Plagarism,
+    github: "https://github.com/virajp4/Plagiarism-Checker",
+    website: "",
+    class: ["python"],
+    stack: ["Python", "Machine Learning", "Natural Language Processing"],
   },
   {
     name: "Chess game",
@@ -132,7 +176,8 @@ const projects = [
     image: Chess,
     github: "https://github.com/virajp4/Chess",
     website: "",
-    class: ""
+    class: ["python"],
+    stack: ["Python", "Object Oriented Programming"],
   },
   {
     name: "Calculator",
@@ -140,7 +185,8 @@ const projects = [
     image: Calculator,
     github: "https://github.com/virajp4/Simple-Calculator",
     website: "",
-    class: "simple"
+    class: ["python"],
+    stack: ["Python", "Tkinter GUI"],
   },
   {
     name: "Tic-Tac-Toe App",
@@ -148,7 +194,8 @@ const projects = [
     image: TicTacToe,
     github: "https://github.com/virajp4/Tic-Tac-Toe-PvP",
     website: "",
-    class: "simple"
+    class: ["python"],
+    stack: ["Python", "Tkinter GUI"],
   },
 ];
 
