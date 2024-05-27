@@ -1,21 +1,8 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { motion } from "framer-motion";
 
 import projects from "@/components/ProjectList";
 import ProjectCard from "@/components/ProjectCard";
-
-function getCategories(projects) {
-  const categories = new Set();
-
-  projects.forEach((project) => {
-    project.class.forEach((category) => {
-      categories.add(category);
-    });
-  });
-
-  return Array.from(categories);
-}
 
 const TabContent = ({ value }) => {
   let proj = projects;

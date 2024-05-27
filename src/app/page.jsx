@@ -31,35 +31,36 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col my-3">
-        <div className="hidden lg:block" data-aos="fade-up" data-aos-duration="800">
+      <div className="flex justify-center items-center flex-col mt-5 sm:mt-3 w-full">
+        <div className="w-full hidden lg:flex lg:flex-col lg:justify-center lg:items-center text-wrap" data-aos="fade-up" data-aos-duration="600">
           <GitHubCalendar username="virajp4" hideColorLegend labels={{ totalCount: `$ git push 'd {{count}} times over the last year.` }} />
-          <span className="text-sm">
-            Check out what I've <Button variant="link">worked</Button> on.
-          </span>
         </div>
-        <div className="hidden md:block lg:hidden" data-aos="fade-up" data-aos-duration="800">
+        <div className="w-full hidden md:flex md:justify-center md:items-center lg:hidden text-wrap" data-aos="fade-up" data-aos-duration="600">
           <GitHubCalendar
             username="virajp4"
             blockSize={10}
             hideColorLegend
-            labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }}
+            labels={{ totalCount: `$ git push 'd {{count}} times over the last year.` }}
           />
         </div>
-        <div className="hidden sm:block md:hidden lg:hidden" data-aos="fade-up" data-aos-duration="800">
+        <div
+          className="w-full hidden sm:flex sm:justify-center sm:items-center md:hidden lg:hidden text-wrap"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
           <GitHubCalendar
             username="virajp4"
             blockSize={6}
             hideColorLegend
-            labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }}
+            labels={{ totalCount: `$ git push 'd {{count}} times over the last year.` }}
           />
         </div>
-        <div className="block sm:hidden md:hidden lg:hidden" data-aos="fade-up" data-aos-duration="800">
+        <div className="w-full flex justify-center items-center sm:hidden md:hidden lg:hidden text-wrap" data-aos="fade-up" data-aos-duration="600">
           <GitHubCalendar
             username="virajp4"
-            blockSize={4}
+            blockSize={3}
             hideColorLegend
-            labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }}
+            labels={{ totalCount: `$ git push 'd {{count}} times over the last year.` }}
             hideMonthLabels
           />
         </div>
