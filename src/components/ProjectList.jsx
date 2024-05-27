@@ -168,7 +168,7 @@ const projects = [
     github: "https://github.com/virajp4/Plagiarism-Checker",
     website: "",
     class: ["python"],
-    stack: ["Python", "Machine Learning", "Natural Language Processing"],
+    stack: ["Python", "Machine Learning", "Natural Language Processing", "Internship"],
   },
   {
     name: "Chess game",

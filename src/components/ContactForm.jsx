@@ -46,7 +46,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="flex flex-col gap-5" onSubmit={handleSubmit} ref={form}>
+    <form className="flex flex-col gap-5" onSubmit={handleSubmit} ref={form} data-aos="fade-down" data-aos-duration="1000">
       {isSuccess && <div className="text-green-500 text-sm px-0.5">Message sent successfully!</div>}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-3">
         <InputField label="First Name *" type="text" id="firstName" refr={firstName} isWarning={warnings.includes("name")} />

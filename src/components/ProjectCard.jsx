@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ name, description, image, github, website, stack }) {
   return (
-    <div className="p-0.5 z-10 overflow-hidden">
+    <div className="p-0.5 z-10 overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
       <div className="bg-black p-1.5 h-full">
         <Image src={image} className="mb-5" alt={name} />
         <div className="flex flex-col gap-2">

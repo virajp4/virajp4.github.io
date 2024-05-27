@@ -1,6 +1,7 @@
 "use client";
+import { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Button } from "@/components/ui/button";
 
 import projects from "@/components/ProjectList";
 import ProjectCard from "@/components/ProjectCard";
@@ -8,7 +9,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Home() {
   return (
     <div className="mt-20 sm:mt-0 md:mt-0 lg:mt-0">
-      <div className="min-h-screen flex justify-center items-center" data-aos="fade-in" data-aos-duration="1500">
+      <div className="min-h-screen flex justify-center items-center" data-aos="fade-up" data-aos-duration="1000">
         <div className="w-[80%] sm:w-[70%] md:w-[60%] flex flex-col gap-7 text-lg">
           <h1 className="text-3xl">Bonjour! I’m Viraj,</h1>
           <div className="flex flex-col gap-5">
@@ -29,11 +30,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="flex justify-center items-center flex-col my-3">
-        <div className="hidden lg:block">
-          <GitHubCalendar username="virajp4" hideColorLegend labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }} />
+        <div className="hidden lg:block" data-aos="fade-up" data-aos-duration="800">
+          <GitHubCalendar username="virajp4" hideColorLegend labels={{ totalCount: `$ git push 'd {{count}} times over the last year.` }} />
+          <span className="text-sm">
+            Check out what I've <Button variant="link">worked</Button> on.
+          </span>
         </div>
-        <div className="hidden md:block lg:hidden">
+        <div className="hidden md:block lg:hidden" data-aos="fade-up" data-aos-duration="800">
           <GitHubCalendar
             username="virajp4"
             blockSize={10}
@@ -41,7 +46,7 @@ export default function Home() {
             labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }}
           />
         </div>
-        <div className="hidden sm:block md:hidden lg:hidden">
+        <div className="hidden sm:block md:hidden lg:hidden" data-aos="fade-up" data-aos-duration="800">
           <GitHubCalendar
             username="virajp4"
             blockSize={6}
@@ -49,7 +54,7 @@ export default function Home() {
             labels={{ totalCount: `$ git push 'd {{count}} times in the last year.` }}
           />
         </div>
-        <div className="block sm:hidden md:hidden lg:hidden">
+        <div className="block sm:hidden md:hidden lg:hidden" data-aos="fade-up" data-aos-duration="800">
           <GitHubCalendar
             username="virajp4"
             blockSize={4}

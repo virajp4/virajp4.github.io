@@ -2,6 +2,7 @@ import { Chivo } from "next/font/google";
 import Script from "next/script";
 import Head from "next/head";
 
+import "aos/dist/aos.css";
 import "./globals.css";
 
 import NavBar from "@/components/NavBar.jsx";
@@ -16,6 +17,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <Head>

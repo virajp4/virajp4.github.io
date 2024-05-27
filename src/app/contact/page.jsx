@@ -4,7 +4,7 @@ export default function page() {
   return (
     <div className="mt-32 flex justify-center items-center">
       <div className="md:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="md:w-11/12">
+        <div className="md:w-11/12" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="text-3xl">Want to chat?</h1>
           <p className="text-lg my-5 font-light leading-relaxed">
             Feel free to connect with me on these social platforms or send me a message through the form on the right!
