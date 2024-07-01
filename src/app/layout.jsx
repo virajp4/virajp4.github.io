@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <Head>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+        <link href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" rel="stylesheet" />
       </Head>
       <body className={chivo.className + ` bg-black min-h-screen h-fit text-white flex flex-col justify-between`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-screen-xl mx-auto w-11/12 xl:w-full p-4 mb-8">{children}</div>
           <Footer />
           <Script src="https://kit.fontawesome.com/f31009ec0d.js" crossOrigin="anonymous" />
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" />
+          <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
         </ThemeProvider>
       </body>
     </html>
