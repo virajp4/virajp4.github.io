@@ -2,32 +2,7 @@
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 import AOS from "aos";
-
-import NavLink from "./NavLink";
-
-const links = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "About",
-    link: "/about",
-  },
-  {
-    title: "Projects",
-    link: "/projects",
-  },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
-  {
-    title: "Resume",
-    link: "https://drive.google.com/drive/folders/1cYbTHIpnEIJkWzEKvf3SRnXoEfSq1KN9?usp=sharing",
-    target: "_blank",
-  },
-];
+import Link from "next/link";
 
 export default function NavBar() {
   const { setTheme } = useTheme();
@@ -41,31 +16,47 @@ export default function NavBar() {
   }, []);
 
   return (
-    <>
-      <nav className="bg-black opacity-90 backdrop-blur-lg fixed w-full z-50">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-7 px-[40px] md:px-[25px]">
-          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <span className="whitespace-nowrap text-white text-xl">VIRAJ PATEL</span>
-          </a>
-          <button
-            data-collapse-toggle="nav-default"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-black dark:focus:ring-gray-600"
-            aria-controls="nav-default"
-            aria-expanded="false"
+    <nav className="h-20 w-full bg-black/85 backdrop-blur-lg">
+      <div className="mx-auto flex h-full max-w-screen-xl flex-wrap items-center justify-between px-10 xl:px-5">
+        <Link href="#home" className="flex items-center">
+          <span className="text-xl text-white transition-all duration-300 hover:opacity-60">
+            VIRAJ PATEL
+          </span>
+        </Link>
+        <ul className="hidden gap-4 font-normal md:flex">
+          <NavBarLink href="#work">work</NavBarLink>
+          <NavBarLink href="#about">about</NavBarLink>
+          <NavBarLink href="#contact">contact</NavBarLink>
+          <NavBarLink
+            href="https://drive.google.com/drive/folders/1cYbTHIpnEIJkWzEKvf3SRnXoEfSq1KN9?usp=sharing"
+            target="_blank"
           >
-            <span className="sr-only">Open nav menu</span>
-            <i className="fa-solid fa-bars text-white fa-lg"></i>
-          </button>
-          <div className="hidden w-full md:block md:w-auto" id="nav-default">
-            <ul className="font-normal flex flex-col p-4 md:p-0 md:flex-row md:space-x-4">
-              {links.map((link, index) => (
-                <NavLink key={index} title={link.title} link={link.link} target={link.target} />
-              ))}
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+            resume
+          </NavBarLink>
+        </ul>
+        <ul className="font-normal md:hidden">
+          <NavBarLink
+            href="https://drive.google.com/drive/folders/1cYbTHIpnEIJkWzEKvf3SRnXoEfSq1KN9?usp=sharing"
+            target="_blank"
+          >
+            resume
+          </NavBarLink>
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
+function NavBarLink({ href, children, target, style = "" }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        target={target}
+        className={`block text-md text-white transition-all duration-300 hover:opacity-60 ${style}`}
+      >
+        {children}
+      </Link>
+    </li>
   );
 }
