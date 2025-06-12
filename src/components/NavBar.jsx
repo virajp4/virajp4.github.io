@@ -18,15 +18,15 @@ export default function NavBar() {
   return (
     <nav className="h-20 w-full bg-black/85 backdrop-blur-lg">
       <div className="mx-auto flex h-full max-w-screen-xl flex-wrap items-center justify-between px-10 xl:px-5">
-        <Link href="#home" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <span className="text-xl text-white transition-all duration-300 hover:opacity-60">
             VIRAJ PATEL
           </span>
         </Link>
-        <ul className="hidden gap-4 font-normal md:flex">
-          <NavBarLink href="#work">work</NavBarLink>
-          <NavBarLink href="#about">about</NavBarLink>
-          <NavBarLink href="#contact">contact</NavBarLink>
+        <ul className="hidden gap-4 font-light md:flex">
+          <NavBarLink href="/#work">work</NavBarLink>
+          <NavBarLink href="/#about">about</NavBarLink>
+          <NavBarLink href="/#contact">contact</NavBarLink>
           <NavBarLink
             href="https://drive.google.com/drive/folders/1cYbTHIpnEIJkWzEKvf3SRnXoEfSq1KN9?usp=sharing"
             target="_blank"
@@ -34,7 +34,7 @@ export default function NavBar() {
             resume
           </NavBarLink>
         </ul>
-        <ul className="font-normal md:hidden">
+        <ul className="font-light md:hidden">
           <NavBarLink
             href="https://drive.google.com/drive/folders/1cYbTHIpnEIJkWzEKvf3SRnXoEfSq1KN9?usp=sharing"
             target="_blank"

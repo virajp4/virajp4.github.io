@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="max-w-screen-xl mx-auto w-full py-10 mb-10 flex flex-col justify-between items-start gap-2"
+      className="max-w-screen-xl mx-auto w-full py-10 mb-10 flex flex-col justify-between items-start gap-2 font-light"
       id="contact"
     >
       <FooterLink href="mailto:viraj.patel482@gmail.com" style="text-lg">

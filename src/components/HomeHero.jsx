@@ -1,9 +1,9 @@
 import Image from "next/image";
 import myImage from "@/assets/other/me.jpg";
 
-export default function Home() {
+export default function HomeHero() {
   return (
-    <div className="font-light h-52 md:h-48 lg:h-60 xl:h-80 my-4 flex flex-col justify-center md:flex-row md:items-center md:justify-between gap-10">
+    <div className="font-light h-52 md:h-48 lg:h-60 xl:h-96 my-2 flex flex-col justify-center md:flex-row md:items-center md:justify-between gap-10">
       <div className="text-xl lg:text-2xl">
         Viraj Patel,
         <span className="opacity-50">

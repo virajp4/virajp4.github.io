@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Calenders from "@/components/Calenders";
+import Calendars from "@/components/Calendars";
 
 export default function About() {
   return (
@@ -9,6 +9,7 @@ export default function About() {
         <br />
         Trying to solve problems, one project at a time.
       </div>
+      <Calendars />
       <div className="flex flex-col gap-3.5">
         <Experience
           company="Alai (YC W24)"
@@ -30,7 +31,6 @@ export default function About() {
           endDate="Dec 2023"
         />
       </div>
-      <Calenders />
     </div>
   );
 }

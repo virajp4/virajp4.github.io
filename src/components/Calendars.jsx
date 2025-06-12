@@ -2,7 +2,7 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function GithubCalendars() {
   return (
-    <div className="flex justify-center items-center flex-col mt-5 sm:mt-3 w-full">
+    <div className="flex justify-center items-center flex-col w-full">
       <div className="w-full hidden md:flex md:justify-start md:items-center text-wrap">
         <GitHubCalendar
           username="virajp4-alai"
