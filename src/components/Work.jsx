@@ -7,7 +7,7 @@ export default function Work() {
     <div className="flex flex-col gap-4" id="work">
       <div className="text-lg">Work</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <WorkCard title="Alai (YC W24)" image={AlaiLogo} link="/alai" />
+        <WorkCard title="Alai" image={AlaiLogo} link="/alai" />
       </div>
     </div>
   );
