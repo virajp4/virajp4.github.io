@@ -19,16 +19,10 @@ export default function About() {
           link="https://getalai.com"
         />
         <Experience
-          company="Freelancer"
-          title="Developer"
-          startDate="Jan 2024"
-          endDate="Aug 2024"
-        />
-        <Experience
           company="SIMS Hospitals"
-          title="Web Developer"
-          startDate="Sept 2023"
-          endDate="Dec 2023"
+          title="Web Developer Intern"
+          startDate="Feb 2024"
+          endDate="Aug 2024"
         />
       </div>
     </div>
