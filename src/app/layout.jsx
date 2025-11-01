@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={
           chivo.className +
-          ` bg-black min-h-screen max-w-screen-xl mx-auto w-11/12 xl:w-full text-white flex flex-col justify-between px-4`
+          ` bg-black min-h-screen max-w-screen-xl mx-auto w-11/12 xl:w-full text-white flex flex-col justify-between px-4 cursor-default`
         }
       >
         <div className="fixed w-full left-0 z-50">

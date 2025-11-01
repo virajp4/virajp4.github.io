@@ -8,6 +8,7 @@ import Sections1 from "@/assets/work/alai/sections1.png";
 import Sections2 from "@/assets/work/alai/sections2.png";
 import Sections3 from "@/assets/work/alai/sections3.png";
 import RefactorImage from "@/assets/work/alai/refactor.png";
+import ChartImage from "@/assets/work/alai/chart.png";
 
 export default function AlaiPage() {
   return (
@@ -20,11 +21,11 @@ export default function AlaiPage() {
       />
       <Separator className="opacity-30" />
       <WorkSection
-        title="Tables, Timelines & Staged Elements"
+        title="Tables, Timelines, Charts & Staged Elements"
         description={
           <>
             <span>
-              Tables, Timelines & Staged Elements like Funnels are vital for high quality
+              Tables, Timelines, Charts & Staged Elements like Funnels are vital for high quality
               visualizations. I was responsible for adding these elements end-to-end.
             </span>
             <span>
@@ -38,7 +39,26 @@ export default function AlaiPage() {
             </span>
           </>
         }
-        images={[TimelineImage, FunnelImage, TableImage]}
+        images={[TimelineImage, TableImage, ChartImage, FunnelImage]}
+      />
+      <Separator className="opacity-30" />
+      <WorkSection
+        title="Sections & Sidebars"
+        description={
+          <>
+            <span>
+              Revamped one of the most crucial elements of every presentation, the Sections. This
+              included adding more ways to customize, style & position them, inherently making them
+              more vibrant & appealing.
+            </span>
+            <span>
+              I was also responsible for laying the foundation & developing the components for
+              element sidebars & the various options that allow for more customization to the
+              elements.
+            </span>
+          </>
+        }
+        images={[Sections2, Sections3, Sections1]}
       />
       <Separator className="opacity-30" />
       <WorkSection
@@ -60,25 +80,6 @@ export default function AlaiPage() {
           </>
         }
         images={[RefactorImage]}
-      />
-      <Separator className="opacity-30" />
-      <WorkSection
-        title="Sections & Sidebars"
-        description={
-          <>
-            <span>
-              Revamped one of the most crucial elements of every presentation, the Sections. This
-              included adding more ways to customize, style & position them, inherently making them
-              more vibrant & appealing.
-            </span>
-            <span>
-              I was also responsible for laying the foundation & developing the components for
-              element sidebars & the various options that allow for more customization to the
-              elements.
-            </span>
-          </>
-        }
-        images={[Sections2, Sections3, Sections1]}
       />
       <Separator className="opacity-30" />
     </div>
