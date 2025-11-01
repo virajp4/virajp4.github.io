@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex justify-start items-center gap-5">
         <FooterLink href="https://github.com/virajp4/">Github</FooterLink>
         <FooterLink href="https://linkedin.com/in/virajpatel4/">LinkedIn</FooterLink>
-        <FooterLink href="https://x.com/virajCodes/">Twitter</FooterLink>
+        <FooterLink href="https://x.com/viraj0x/">Twitter</FooterLink>
       </div>
     </footer>
   );
