@@ -5,7 +5,8 @@ export default function About() {
   return (
     <div className="flex flex-col gap-5" id="about">
       <div className="text-lg font-extralight">
-        Computer Science graduate who loves building, breaking and fixing things as a hobby.
+        Computer Science graduate who loves building, breaking and fixing things
+        as a hobby.
         <br />
         Trying to solve problems, one project at a time.
       </div>
@@ -15,7 +16,8 @@ export default function About() {
           company="Alai (YC W24)"
           title="Software Engineer"
           startDate="Sept 2024"
-          endDate="Present"
+          endDate="July 2026"
+          duration="1 year 10 months"
           link="https://getalai.com"
         />
         <Experience
@@ -23,13 +25,14 @@ export default function About() {
           title="Web Developer Intern"
           startDate="Feb 2024"
           endDate="Aug 2024"
+          duration="6 months"
         />
       </div>
     </div>
   );
 }
 
-function Experience({ company, title, startDate, endDate, link }) {
+function Experience({ company, title, startDate, endDate, duration, link }) {
   return (
     <div className="flex flex-col text-md w-fit">
       {link ? (
@@ -44,7 +47,7 @@ function Experience({ company, title, startDate, endDate, link }) {
         <div className="font-medium">{company}</div>
       )}
       <div className="opacity-70 font-thin">
-        {title} — {startDate} - {endDate}
+        {title} — {startDate} - {endDate} ({duration})
       </div>
     </div>
   );
