@@ -19,7 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <Head>
-        <link href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" rel="stylesheet" />
+        <link
+          href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"
+          rel="stylesheet"
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body
@@ -35,8 +38,11 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
-        <Script src="https://kit.fontawesome.com/f31009ec0d.js" crossOrigin="anonymous" />
-        <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+        <Script
+          src="https://kit.fontawesome.com/f31009ec0d.js"
+          crossOrigin="anonymous"
+        />
+        <Script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js" />
       </body>
     </html>
   );

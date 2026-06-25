@@ -8,7 +8,7 @@ export default function HomeHero() {
         Viraj Patel,
         <span className="opacity-50">
           {" "}
-          software engineer currently <br className="hidden xl:block" /> enhancing slides at{" "}
+          software engineer building cool things, <br className="hidden xl:block" /> previously at{" "}
         </span>
         Alai (YC W24).
       </div>

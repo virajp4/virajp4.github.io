@@ -16,7 +16,7 @@ export default function About() {
           company="Alai (YC W24)"
           title="Software Engineer"
           startDate="Sept 2024"
-          endDate="July 2026"
+          endDate="June 2026"
           duration="1 year 10 months"
           link="https://getalai.com"
         />
